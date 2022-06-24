@@ -24,7 +24,9 @@ $censure = $_GET['censure'];
         </form>
         <h2>Testo censurato</h2>
         <p>
-            <?= str_replace($censure, '***', $paragraph) ?>
+            <?= $paragraphReplace = str_replace($censure, '***', $paragraph) ?>
+            <br>
+            Di lunghezza <?= strlen($paragraphReplace) ?>
         </p>
     </main>
 </body>
