@@ -16,7 +16,7 @@ $censure = $_GET['censure'];
 <body>
     <main>
         <h2>Testo senza censura</h2>
-        <p><?= $paragraph ?> <br> Di lunghezza <?= strlen($paragraph) ?> caratteri</p>
+        <p><?= $paragraph ?> <br> Di lunghezza <?php echo strlen($paragraph); ?> caratteri</p>
         <form action="" method="get">
             <label for="censure">Parola da censurare</label>
             <input type="text" name="censure">
